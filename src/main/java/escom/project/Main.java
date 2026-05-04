@@ -29,6 +29,14 @@ public class Main {
 
             switch (opcion) {
                 case 1: // Buscar y Desplegar
+                    System.out.println("Inserte un ID valido: ");
+                    int aa = leer.nextInt();
+                    Boleto a = miEvento.buscarBoleto(aa);
+                    if(a != null){
+                        a.desplegarDetalles();
+                    }else{
+                        System.out.println("No existe el Boleto con ID: " + aa);
+                    }
                     // Aquí usas la sobrecarga: preguntar si quiere buscar por ID o por Asiento
                     break;
                 case 2: // Agregar nuevo Boleto

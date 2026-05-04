@@ -112,7 +112,7 @@ public class Evento {
     }
     public Boleto buscarBoleto(int id) {
         for (Boleto b : boletos) {
-            if (b.getId() == id) return b;
+            if (b.getMiId() == id) return b;
         }
         return null;
     }
