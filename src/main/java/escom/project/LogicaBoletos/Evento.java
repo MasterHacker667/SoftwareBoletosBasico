@@ -136,6 +136,12 @@ public class Evento {
         for(Boleto bol : this.boletos){
             bol.desplegarDetalles();
         }
+        System.out.println("------Numero de boletos------");
+        System.out.println("Luneta: " + this.getNoLuneta());
+        System.out.println("Gradas: " + this.getNoGradas());
+        System.out.println("Palco: " + this.getNoPalco());
+        System.out.println("General: " + this.getNoGeneral());
+        System.out.println("  Total de boletos: " + (this.getNoGeneral() + this.getNoGradas() + this.getNoPalco() + this.getNoLuneta()));
     }
     //setters
     public void setCodigo(int c) {

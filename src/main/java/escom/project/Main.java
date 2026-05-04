@@ -79,7 +79,7 @@ public class Main {
                             miEvento.crearBoleto("palco");
                             System.out.println("✅ Boleto de Palco agregado.");
                             break;
-                            
+
 
                         default:
                             System.out.println("Opción no válida.");
